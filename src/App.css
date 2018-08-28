@@ -1,0 +1,12 @@
+/* Styling by ID */
+#display {
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+}
+
+.drum-pad {
+    height: 200px;
+    width: 200px;
+    background: pink;
+}
