@@ -1,50 +1,48 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          
-        </header>
+        <header className="App-header" />
         <div id="display">
-          { /* the area with the 9 .drum-pads each with <audio> elms */ }
+          {/* the area with the 9 .drum-pads each with <audio> elms */}
           <div className="drum-pad">
             <p>Q</p>
-            <audio src=""></audio>
+            <audio src="" />
           </div>
           <div className="drum-pad">
-          <p>W</p>
-            <audio src=""></audio>
+            <p>W</p>
+            <audio src="" />
           </div>
           <div className="drum-pad">
-          <p>E</p>
-            <audio src=""></audio>
+            <p>E</p>
+            <audio src="" />
           </div>
           <div className="drum-pad">
-          <p>A</p>
-            <audio src=""></audio>
+            <p>A</p>
+            <audio src="" />
           </div>
           <div className="drum-pad">
-          <p>S</p>
-            <audio src=""></audio>
+            <p>S</p>
+            <audio src="" />
           </div>
           <div className="drum-pad">
-          <p>D</p>
-            <audio src=""></audio>
+            <p>D</p>
+            <audio src="" />
           </div>
           <div className="drum-pad">
-          <p>Z</p>
-            <audio src=""></audio>
+            <p>Z</p>
+            <audio src="" />
           </div>
           <div className="drum-pad">
-          <p>X</p>
-            <audio src=""></audio>
+            <p>X</p>
+            <audio src="" />
           </div>
           <div className="drum-pad">
-          <p>C</p>
-            <audio src=""></audio>
+            <p>C</p>
+            <audio src="" />
           </div>
         </div>
       </div>
