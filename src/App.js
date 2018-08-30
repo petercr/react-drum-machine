@@ -8,39 +8,39 @@ class App extends Component {
         <header className="App-header" />
         <div id="display">
           {/* the area with the 9 .drum-pads each with <audio> elms */}
-          <div className="drum-pad">
+          <div className="drum-pad" id="Q">
             <p>Q</p>
             <audio src="" />
           </div>
-          <div className="drum-pad">
+          <div className="drum-pad" id="W">
             <p>W</p>
             <audio src="" />
           </div>
-          <div className="drum-pad">
+          <div className="drum-pad" id="E" >
             <p>E</p>
             <audio src="" />
           </div>
-          <div className="drum-pad">
+          <div className="drum-pad" id="A">
             <p>A</p>
             <audio src="" />
           </div>
-          <div className="drum-pad">
+          <div className="drum-pad" id="S">
             <p>S</p>
             <audio src="" />
           </div>
-          <div className="drum-pad">
+          <div className="drum-pad" id="D">
             <p>D</p>
             <audio src="" />
           </div>
-          <div className="drum-pad">
+          <div className="drum-pad" id="Z">
             <p>Z</p>
             <audio src="" />
           </div>
-          <div className="drum-pad">
+          <div className="drum-pad" id="X">
             <p>X</p>
             <audio src="" />
           </div>
-          <div className="drum-pad">
+          <div className="drum-pad" id="C">
             <p>C</p>
             <audio src="" />
           </div>
