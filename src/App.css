@@ -1,12 +1,31 @@
 /* Styling by ID */
 #display {
-    display: grid;
-    grid-column: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-gap: 10px;
+  padding-top: 10%;
+  justify-content: center;
 }
 
 .drum-pad {
-    height: 200px;
-    width: 200px;
-    background: pink;
+  /* height: 100px;
+    width: 100px; */
+  background: #cc95c0; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #7aa1d2,
+    #dbd4b4,
+    #cc95c0
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #7aa1d2,
+    #dbd4b4,
+    #cc95c0
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border: 2px solid #000333;
+  text-align: center;
+
 }
+
