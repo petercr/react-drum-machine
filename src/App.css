@@ -33,3 +33,11 @@
     text-shadow: 2px 1px 1px #cc95c0;
 
 }
+
+.App-header {
+  width: 100%;
+  background-color: blue;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(-21px);
+}
