@@ -11,6 +11,9 @@ class App extends Component {
         </header>
         <div id="display">
           {/* the area with the 9 .drum-pads each with <audio> elms */}
+          {/* Drum sounds from http://99sounds.org/drum-samples/ 
+          * Please see site for license info
+          */}
           <div className="drum-pad" id="Q">
             <p>Q</p>
             <audio src="" />
