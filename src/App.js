@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import "./App.css";
+import "./index.css";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header" />
+        <header className="App-header" >
+        <h1>Drum Machine Game</h1>
+        </header>
         <div id="display">
           {/* the area with the 9 .drum-pads each with <audio> elms */}
           <div className="drum-pad" id="Q">
