@@ -16,7 +16,9 @@ class App extends Component {
           */}
           <div className="drum-pad" id="Q">
             <p>Q</p>
-            <audio src="" />
+            <audio controls className=".clip">
+              <source src="sounds/kick-thump.wav" type="audio/wav"/>
+            </audio>
           </div>
           <div className="drum-pad" id="W">
             <p>W</p>
