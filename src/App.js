@@ -5,7 +5,7 @@ import "./index.css";
 
 class App extends Component {
   render() {
-    // const Kick_thump = "../sounds/Kick_thump.mp3";
+    // const Kick_thump = "../sounds/kick_thump.mp3";
     return (
       <div className="App">
         <header className="App-header" >
@@ -19,7 +19,7 @@ class App extends Component {
           <div className="drum-pad" id="Q">
             <p>Q</p>
             <audio controls className=".clip">
-              <source src="sounds/Kick_thump.mp3" type="audio/mp3"/>
+              <source src="sounds/kick_thump.mp3" type="audio/mp3"/>
             </audio>
           </div>
           <div className="drum-pad" id="W">
