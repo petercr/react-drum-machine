@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import "./App.css";
 import "./index.css";
+// import  from "../sounds/Kick_thump.mp3";
 
 class App extends Component {
   render() {
+    // const Kick_thump = "../sounds/Kick_thump.mp3";
     return (
       <div className="App">
         <header className="App-header" >
@@ -17,7 +19,7 @@ class App extends Component {
           <div className="drum-pad" id="Q">
             <p>Q</p>
             <audio controls className=".clip">
-              <source src="sounds/kick-thump.wav" type="audio/wav"/>
+              <source src="sounds/Kick_thump.mp3" type="audio/mp3"/>
             </audio>
           </div>
           <div className="drum-pad" id="W">
