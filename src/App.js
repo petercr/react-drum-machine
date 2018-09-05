@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import "./index.css";
-// import  from "../sounds/Kick_thump.mp3";
+import Kick_thump from "./kick-thump.mp3";
 
 class App extends Component {
   render() {
@@ -19,7 +19,7 @@ class App extends Component {
           <div className="drum-pad" id="Q">
             <p>Q</p>
             <audio controls className=".clip">
-              <source src="sounds/kick_thump.mp3" type="audio/mp3"/>
+              <source src={Kick_thump} type="audio/mp3"/>
             </audio>
           </div>
           <div className="drum-pad" id="W">
