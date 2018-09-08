@@ -1,7 +1,17 @@
 import React, { Component } from "react";
 import "./App.css";
 import "./index.css";
-import Kick_thump from "./kick-thump.mp3";
+
+// Import the MP3 files for the drum pads
+import Clap_808 from "/.sounds/clap-808.mp3";
+import Crash_noise from "./soudns/crash-noise.mp3";
+import HiHat from "./sounds/hihat-dist02.mp3";
+import Kick_thump from "./sounds/kick-thump.mp3";
+import Kick_zapper from "./sounds/Kick_zapper";
+import Tribal from "./sounds/perc-tribal.mp3";
+import Ride_cymbal from "./sounds/ride-acoustic02.mp3";
+import Snare_block from "./sounds/snare-block.mp3";
+import Tom_tom from "./sounds/tom-analog.mp3";
 
 class App extends Component {
   render() {
