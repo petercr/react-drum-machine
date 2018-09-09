@@ -14,10 +14,24 @@ import Snare_block from "./sounds/snare-block.mp3";
 import Tom_tom from "./sounds/tom-analog.mp3";
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.onPlay = this.onPlay.bind(this);
+    this.kickZapper = new Audio(Kick_zapper);
+  }
+
+  onPlay(event) {
+    if (event.currentTarget.id === "W"){
+      this.kickZapper.play();
+    }
+    console.log(event.currentTarget);
+  }
   // handleClick (event) {
   //   let target =  event.currentTarget;
   //   console.log("stuff ", event, target);
   // }
+
+
 
   render() {
     return (
@@ -37,7 +51,7 @@ class App extends Component {
             </audio>
             <p>Kick Thump</p>
           </div>
-          <div className="drum-pad" id="W">
+          <div className="drum-pad" id="W" onClick={(e) => this.onPlay(e)}>
             <p>W</p>
             <audio src={Kick_zapper} type="audio/mp3" />
           </div>
