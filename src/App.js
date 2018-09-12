@@ -120,27 +120,27 @@ class App extends Component {
           </div>
           <div className="drum-pad" id="W" onClick={e => this.handleClick(e)}>
             <p>W</p>
-            <audio src={Kick_zapper} type="audio/mp3" />
+            <audio className=".clip" src={Kick_zapper} type="audio/mp3" />
           </div>
           <div className="drum-pad" id="E" onClick={e => this.handleClick(e)}>
             <p>E</p>
-            <audio src={Tom_tom} type="audio/mp3" />
+            <audio className=".clip" src={Tom_tom} type="audio/mp3" />
           </div>
           <div className="drum-pad" id="A" onClick={e => this.handleClick(e)}>
             <p>A</p>
-            <audio src={Snare_block} type="audio/mp3" />
+            <audio className=".clip" src={Snare_block} type="audio/mp3" />
           </div>
           <div className="drum-pad" id="S" onClick={e => this.handleClick(e)}>
             <p>S</p>
-            <audio src={HiHat} type="audio/mp3" />
+            <audio className=".clip" src={HiHat} type="audio/mp3" />
           </div>
           <div className="drum-pad" id="D" onClick={e => this.handleClick(e)}>
             <p>D</p>
-            <audio src={Ride_cymbal} type="audio/mp3" />
+            <audio className=".clip" src={Ride_cymbal} type="audio/mp3" />
           </div>
           <div className="drum-pad" id="Z" onClick={e => this.handleClick(e)}>
             <p>Z</p>
-            <audio src={Tribal} type="audio/mp3" />
+            <audio className=".clip" src={Tribal} type="audio/mp3" />
           </div>
           <div className="drum-pad" id="X" onClick={e => this.handleClick(e)}>
             <p>X</p>
@@ -148,7 +148,7 @@ class App extends Component {
           </div>
           <div className="drum-pad" id="C" onClick={e => this.handleClick(e)}>
             <p>C</p>
-            <audio src={Clap_808} type="audio/mp3" />
+            <audio className=".clip" src={Clap_808} type="audio/mp3" />
           </div>
         </div>
       </div>
