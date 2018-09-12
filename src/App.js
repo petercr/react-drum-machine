@@ -16,7 +16,6 @@ import Tom_tom from "./sounds/tom-analog.mp3";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
     this.sounds = {
       clap808: new Audio(Clap_808),
       crashNoise: new Audio(Crash_noise),
@@ -28,6 +27,8 @@ class App extends Component {
       snareBlock: new Audio(Snare_block),
       tomTom: new Audio(Tom_tom)
     };
+    this.handleClick = this.handleClick.bind(this);
+    this.handleKeys = this.handleKeys.bind(this);
   }
 
   handleClick(event) {
@@ -64,13 +65,48 @@ class App extends Component {
     console.log(event.currentTarget);
   }
 
+  handleKeys(key) {
+    const upperCase = key.toUpperCase();
+
+    switch (upperCase) {
+      case "W":
+        this.sounds.kickZapper.play();
+        break;
+      case "Q":
+        this.sounds.kickThump.play();
+        break;
+      case "E":
+        this.sounds.tomTom.play();
+        break;
+      case "A":
+        this.sounds.snareBlock.play();
+        break;
+      case "S":
+        this.sounds.hiHat.play();
+        break;
+      case "D":
+        this.sounds.rideCymbal.play();
+        break;
+      case "Z":
+        this.sounds.tribalDrum.play();
+        break;
+      case "X":
+        this.sounds.crashNoise.play();
+        break;
+
+      default:
+        this.sounds.clap808.play();
+    }
+
+  }
+
   render() {
     return (
-      <div className="App">
+      <div className="App"  >
         <header className="App-header">
           <h1>Drum Machine Game</h1>
         </header>
-        <div id="display">
+        <div id="display" tabIndex={-1} onKeyDown={event => this.handleKeys(event.key)}>
           {/* the area with the 9 .drum-pads each with <audio> elms */}
           {/* Drum sounds from http://99sounds.org/drum-samples/ 
           * Please see site for license info
