@@ -16,7 +16,7 @@ import Tom_tom from "./sounds/tom-analog.mp3";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.onPlay = this.onPlay.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.sounds = {
       clap808: new Audio(Clap_808),
       crashNoise: new Audio(Crash_noise),
@@ -30,35 +30,65 @@ class App extends Component {
     };
   }
 
-  onPlay(event) {
-    if (event.currentTarget.id === "W") {
-      this.sounds.kickZapper.play();
+  handleClick(event) {
+    switch (event.currentTarget.id) {
+      case "W":
+        this.sounds.kickZapper.play();
+        break;
+      case "Q":
+        this.sounds.kickThump.play();
+        break;
+      case "E":
+        this.sounds.tomTom.play();
+        break;
+      case "A":
+        this.sounds.snareBlock.play();
+        break;
+      case "S":
+        this.sounds.hiHat.play();
+        break;
+      case "D":
+        this.sounds.rideCymbal.play();
+        break;
+      case "Z":
+        this.sounds.tribalDrum.play();
+        break;
+      case "X":
+        this.sounds.crashNoise.play();
+        break;
+
+      default:
+        this.sounds.clap808.play();
     }
-    else if (event.currentTarget.id === "Q") {
-      this.sounds.kickThump.play();
-    }
-    else if (event.currentTarget.id === "E") {
-      this.sounds.tomTom.play();
-    }
-    else if (event.currentTarget.id === "A") {
-      this.sounds.snareBlock.play();
-    }
-    else if (event.currentTarget.id === "S") {
-      this.sounds.hiHat.play();
-    }
-    else if (event.currentTarget.id === "D") {
-      this.sounds.rideCymbal.play();
-    }
-    else if (event.currentTarget.id === "Z") {
-      this.sounds.tribalDrum.play();
-    }
-    else if (event.currentTarget.id === "X") {
-      this.sounds.crashNoise.play();
-    }
-    // else default to Clap_808 sound
-    else {
-      this.sounds.clap808.play();
-    }
+
+    // if (event.currentTarget.id === "W") {
+    //   this.sounds.kickZapper.play();
+    // }
+    // else if (event.currentTarget.id === "Q") {
+    //   this.sounds.kickThump.play();
+    // }
+    // else if (event.currentTarget.id === "E") {
+    //   this.sounds.tomTom.play();
+    // }
+    // else if (event.currentTarget.id === "A") {
+    //   this.sounds.snareBlock.play();
+    // }
+    // else if (event.currentTarget.id === "S") {
+    //   this.sounds.hiHat.play();
+    // }
+    // else if (event.currentTarget.id === "D") {
+    //   this.sounds.rideCymbal.play();
+    // }
+    // else if (event.currentTarget.id === "Z") {
+    //   this.sounds.tribalDrum.play();
+    // }
+    // else if (event.currentTarget.id === "X") {
+    //   this.sounds.crashNoise.play();
+    // }
+    // // else default to Clap_808 sound
+    // else {
+    //   this.sounds.clap808.play();
+    // }
     console.log(event.currentTarget);
   }
 
@@ -73,42 +103,42 @@ class App extends Component {
           {/* Drum sounds from http://99sounds.org/drum-samples/ 
           * Please see site for license info
           */}
-          <div className="drum-pad" id="Q" onClick={e => this.onPlay(e)} >
+          <div className="drum-pad" id="Q" onClick={e => this.handleClick(e)}>
             <p>Q</p>
             <audio className=".clip">
               <source src={Kick_thump} type="audio/mp3" />
             </audio>
             <p>Kick Thump</p>
           </div>
-          <div className="drum-pad" id="W" onClick={e => this.onPlay(e)}>
+          <div className="drum-pad" id="W" onClick={e => this.handleClick(e)}>
             <p>W</p>
             <audio src={Kick_zapper} type="audio/mp3" />
           </div>
-          <div className="drum-pad" id="E" onClick={e => this.onPlay(e)} >
+          <div className="drum-pad" id="E" onClick={e => this.handleClick(e)}>
             <p>E</p>
             <audio src={Tom_tom} type="audio/mp3" />
           </div>
-          <div className="drum-pad" id="A"  onClick={e => this.onPlay(e)}>
+          <div className="drum-pad" id="A" onClick={e => this.handleClick(e)}>
             <p>A</p>
             <audio src={Snare_block} type="audio/mp3" />
           </div>
-          <div className="drum-pad" id="S" onClick={e => this.onPlay(e)}>
+          <div className="drum-pad" id="S" onClick={e => this.handleClick(e)}>
             <p>S</p>
             <audio src={HiHat} type="audio/mp3" />
           </div>
-          <div className="drum-pad" id="D" onClick={e => this.onPlay(e)}>
+          <div className="drum-pad" id="D" onClick={e => this.handleClick(e)}>
             <p>D</p>
             <audio src={Ride_cymbal} type="audio/mp3" />
           </div>
-          <div className="drum-pad" id="Z" onClick={e => this.onPlay(e)}>
+          <div className="drum-pad" id="Z" onClick={e => this.handleClick(e)}>
             <p>Z</p>
             <audio src={Tribal} type="audio/mp3" />
           </div>
-          <div className="drum-pad" id="X" onClick={e => this.onPlay(e)}>
+          <div className="drum-pad" id="X" onClick={e => this.handleClick(e)}>
             <p>X</p>
             <audio src={Crash_noise} type="audio/mp3" />
           </div>
-          <div className="drum-pad" id="C" onClick={e => this.onPlay(e)}>
+          <div className="drum-pad" id="C" onClick={e => this.handleClick(e)}>
             <p>C</p>
             <audio src={Clap_808} type="audio/mp3" />
           </div>
