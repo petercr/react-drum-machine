@@ -60,35 +60,7 @@ class App extends Component {
       default:
         this.sounds.clap808.play();
     }
-
-    // if (event.currentTarget.id === "W") {
-    //   this.sounds.kickZapper.play();
-    // }
-    // else if (event.currentTarget.id === "Q") {
-    //   this.sounds.kickThump.play();
-    // }
-    // else if (event.currentTarget.id === "E") {
-    //   this.sounds.tomTom.play();
-    // }
-    // else if (event.currentTarget.id === "A") {
-    //   this.sounds.snareBlock.play();
-    // }
-    // else if (event.currentTarget.id === "S") {
-    //   this.sounds.hiHat.play();
-    // }
-    // else if (event.currentTarget.id === "D") {
-    //   this.sounds.rideCymbal.play();
-    // }
-    // else if (event.currentTarget.id === "Z") {
-    //   this.sounds.tribalDrum.play();
-    // }
-    // else if (event.currentTarget.id === "X") {
-    //   this.sounds.crashNoise.play();
-    // }
-    // // else default to Clap_808 sound
-    // else {
-    //   this.sounds.clap808.play();
-    // }
+    
     console.log(event.currentTarget);
   }
 
