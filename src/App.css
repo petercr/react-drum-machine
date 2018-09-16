@@ -7,10 +7,20 @@
   justify-content: center;
 }
 
-#display {
+/* Styling by Class Name */
+
+.App-header {
+  width: 100%;
+  background-color: blue;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(-21px);
+}
+
+.top-banners {
   display: block;
   width: 80%;
-  padding: 0 10% 0 10%;
+  padding: 10px 10% 10px 10%;
   margin: 0, auto;
   text-align: center;
 }
@@ -42,10 +52,4 @@
 
 }
 
-.App-header {
-  width: 100%;
-  background-color: blue;
-  color: #ffffff;
-  text-align: center;
-  transform: translateY(-21px);
-}
+
