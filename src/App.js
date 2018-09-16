@@ -117,9 +117,9 @@ class App extends Component {
         <header className="App-header">
           <h1>Drum Machine Game</h1>
         </header>
-        <div id="drum-display">{this.state.default}</div>
+        <div id="display">{this.state.default}</div>
         <div
-          id="display"
+          id="drum-display"
           tabIndex={-1}
           onKeyDown={event => this.handleKeys(event.key)}
         >

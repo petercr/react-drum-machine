@@ -1,5 +1,5 @@
 /* Styling by ID */
-#display {
+#drum-display {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-gap: 10px;
@@ -7,7 +7,7 @@
   justify-content: center;
 }
 
-#drum-display {
+#display {
   display: block;
   width: 80%;
   padding: 0 10% 0 10%;
