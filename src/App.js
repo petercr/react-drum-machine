@@ -27,6 +27,18 @@ class App extends Component {
       snareBlock: new Audio(Snare_block),
       tomTom: new Audio(Tom_tom)
     };
+    this.state = {
+      clap808: "Clap Noise",
+      crashNoise: "Crash Cymbal",
+      hiHat: "Hi Hat Cymbal",
+      kickThump: "Bass Drum",
+      kickZapper: "Kick Drum",
+      tribalDrum: "Tribal Drum",
+      rideCymbal: "Ride Cymbal",
+      snareBlock: "Snare Drum",
+      tomTom: "Tom Tom",
+      default: "Click or Press to get started"
+    };
     this.handleClick = this.handleClick.bind(this);
     this.handleKeys = this.handleKeys.bind(this);
   }
@@ -61,7 +73,7 @@ class App extends Component {
       default:
         this.sounds.clap808.play();
     }
-    
+
     console.log(event.currentTarget);
   }
 
@@ -97,16 +109,21 @@ class App extends Component {
       default:
         this.sounds.clap808.play();
     }
-
   }
 
   render() {
     return (
-      <div className="App"  >
+      <div className="App" id="drum-machine">
         <header className="App-header">
           <h1>Drum Machine Game</h1>
         </header>
-        <div id="display" tabIndex={-1} onKeyDown={event => this.handleKeys(event.key)}>
+        <div id="drum-display">{this.state.default}</div>
+        <div
+          id="display"
+          tabIndex={-1}
+          onKeyDown={event => this.handleKeys(event.key)}
+        >
+          
           {/* the area with the 9 .drum-pads each with <audio> elms */}
           {/* Drum sounds from http://99sounds.org/drum-samples/ 
           * Please see site for license info
