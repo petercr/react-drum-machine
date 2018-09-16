@@ -7,6 +7,14 @@
   justify-content: center;
 }
 
+#drum-display {
+  display: block;
+  width: 80%;
+  padding: 0 10% 0 10%;
+  margin: 0, auto;
+  text-align: center;
+}
+
 .drum-pad {
   /* height: 100px;
     width: 100px; */
