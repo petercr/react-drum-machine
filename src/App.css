@@ -1,10 +1,28 @@
 /* Styling by ID */
-#display {
+#drum-display {
   display: grid;
   grid-template-columns: 200px 200px 200px;
   grid-gap: 10px;
-  padding-top: 10%;
+  padding-top: 5%;
   justify-content: center;
+}
+
+/* Styling by Class Name */
+
+.App-header {
+  width: 100%;
+  background-color: blue;
+  color: #ffffff;
+  text-align: center;
+  transform: translateY(-21px);
+}
+
+.top-banners {
+  display: block;
+  width: 80%;
+  padding: 10px 10% 10px 10%;
+  margin: 0, auto;
+  text-align: center;
 }
 
 .drum-pad {
@@ -34,10 +52,4 @@
 
 }
 
-.App-header {
-  width: 100%;
-  background-color: blue;
-  color: #ffffff;
-  text-align: center;
-  transform: translateY(-21px);
-}
+
