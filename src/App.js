@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import "./index.css";
+import "./github-alt-brands.svg";
 
 // Import the MP3 files for the drum pads
 import Clap_808 from "./sounds/clap-808.mp3";
@@ -134,6 +135,7 @@ class App extends Component {
       <div className="App" id="drum-machine">
         <header className="App-header">
           <h1>Drum Machine Game</h1>
+          <img src="github-alt-brands.svg" alt="Link to Code on GitHub" srcset=""/>
         </header>
         <div id="playing" className="top-banners">What's Playing:</div>
         <div id="display" className="top-banners">{this.state.default}</div>
