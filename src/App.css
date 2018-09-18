@@ -11,6 +11,19 @@
   padding-right: 15px;
 }
 
+#playing {
+  color: #f1cb22;
+  text-shadow: 2px 2px 2px #cc95c0, 1px 1px 1px #000000;
+  font-size: 20px;
+}
+
+#display {
+  color: #cc95c0;
+  font-size: 24px;
+  text-shadow: 1px 1px 1px black, 2px 2px 2px #7aa1d2;
+
+}
+
 /* Styling by Class Name */
 
 .App-header {
@@ -24,9 +37,7 @@
 }
 
 .social-icon {
-  /* justify-content: flex-end;a */
   margin-top: 1%;
-  margin-left: auto;
 }
 
 .top-banners {
