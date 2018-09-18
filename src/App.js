@@ -134,9 +134,9 @@ class App extends Component {
     return (
       <div className="App" id="drum-machine">
         <header className="App-header">
-          <h1>Drum Machine Game</h1>
-          <SocialIcon url="https://www.github.com/petercr/react-drum-machine/" />
-          <SocialIcon url="https://www.twitter.com/PeteCapeCod" />
+          <h1 id="name">Drum Machine Game</h1>
+          <SocialIcon url="https://www.github.com/petercr/react-drum-machine/" color="#333333" />
+          <SocialIcon url="https://www.twitter.com/PeteCapeCod" color="#ffffff" />
         </header>
         <div id="playing" className="top-banners">What's Playing:</div>
         <div id="display" className="top-banners">{this.state.default}</div>
