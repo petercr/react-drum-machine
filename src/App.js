@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import "./index.css";
+import { SocialIcon } from "react-social-icons";
 
 // Import the MP3 files for the drum pads
 import Clap_808 from "./sounds/clap-808.mp3";
@@ -134,6 +135,8 @@ class App extends Component {
       <div className="App" id="drum-machine">
         <header className="App-header">
           <h1>Drum Machine Game</h1>
+          <SocialIcon url="https://www.github.com/petercr/react-drum-machine/" />
+          <SocialIcon url="https://www.twitter.com/PeteCapeCod" />
         </header>
         <div id="playing" className="top-banners">What's Playing:</div>
         <div id="display" className="top-banners">{this.state.default}</div>
