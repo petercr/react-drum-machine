@@ -47,39 +47,48 @@ class App extends Component {
   handleClick(event) {
     switch (event.currentTarget.id) {
       case "W":
+        this.sounds.kickZapper.currentTime = 0;
         this.setState({ default: this.state.kickZapper });
         this.sounds.kickZapper.play();
         break;
       case "Q":
+        this.sounds.kickThump.currentTime = 0;
         this.setState({ default: this.state.kickThump });
         this.sounds.kickThump.play();
         break;
       case "E":
+        this.sounds.tomTom.currentTime = 0;
         this.setState({ default: this.state.tomTom });
         this.sounds.tomTom.play();
         break;
       case "A":
+        this.sounds.snareBlock.currentTime = 0;
         this.setState({ default: this.state.snareBlock });
         this.sounds.snareBlock.play();
         break;
       case "S":
+        this.sounds.hiHat.currentTime = 0;
         this.setState({ default: this.state.hiHat });
         this.sounds.hiHat.play();
         break;
       case "D":
+        this.sounds.rideCymbal.currentTime = 0;
         this.setState({ default: this.state.rideCymbal });
         this.sounds.rideCymbal.play();
         break;
       case "Z":
+        this.sounds.tribalDrum.currentTime = 0;
         this.setState({ default: this.state.tribalDrum });
         this.sounds.tribalDrum.play();
         break;
       case "X":
+        this.sounds.crashNoise.currentTime = 0;
         this.setState({ default: this.state.crashNoise });
         this.sounds.crashNoise.play();
         break;
 
       default:
+        this.sounds.clap808.currentTime = 0;
         this.setState({ default: this.state.clap808 });
         this.sounds.clap808.play();
     }
@@ -92,39 +101,48 @@ class App extends Component {
 
     switch (upperCase) {
       case "W":
+        this.sounds.kickZapper.currentTime = 0;
         this.setState({ default: this.state.kickZapper });
         this.sounds.kickZapper.play();
         break;
       case "Q":
+        this.sounds.kickThump.currentTime = 0;
         this.setState({ default: this.state.kickThump });
         this.sounds.kickThump.play();
         break;
       case "E":
+        this.sounds.tomTom.currentTime = 0;
         this.setState({ default: this.state.tomTom });
         this.sounds.tomTom.play();
         break;
       case "A":
+        this.sounds.snareBlock.currentTime = 0;
         this.setState({ default: this.state.snareBlock });
         this.sounds.snareBlock.play();
         break;
       case "S":
+        this.sounds.hiHat.currentTime = 0;
         this.setState({ default: this.state.hiHat });
         this.sounds.hiHat.play();
         break;
       case "D":
+        this.sounds.rideCymbal.currentTime = 0;
         this.setState({ default: this.state.rideCymbal });
         this.sounds.rideCymbal.play();
         break;
       case "Z":
+        this.sounds.tribalDrum.currentTime = 0;
         this.setState({ default: this.state.tribalDrum });
         this.sounds.tribalDrum.play();
         break;
       case "X":
+        this.sounds.crashNoise.currentTime = 0;
         this.setState({ default: this.state.crashNoise });
         this.sounds.crashNoise.play();
         break;
 
       default:
+        this.sounds.clap808.currentTime = 0;
         this.setState({ default: this.state.clap808 });
         this.sounds.clap808.play();
     }
@@ -135,11 +153,21 @@ class App extends Component {
       <div className="App" id="drum-machine">
         <header className="App-header">
           <h1 id="name">Drum Machine Game</h1>
-          <SocialIcon url="https://www.github.com/petercr/react-drum-machine/" color="#333333" />
-          <SocialIcon url="https://www.twitter.com/PeteCapeCod" color="#ffffff" />
+          <SocialIcon
+            url="https://www.github.com/petercr/react-drum-machine/"
+            color="#333333"
+          />
+          <SocialIcon
+            url="https://www.twitter.com/PeteCapeCod"
+            color="#ffffff"
+          />
         </header>
-        <div id="playing" className="top-banners">What's Playing:</div>
-        <div id="display" className="top-banners">{this.state.default}</div>
+        <div id="playing" className="top-banners">
+          What's Playing:
+        </div>
+        <div id="display" className="top-banners">
+          {this.state.default}
+        </div>
         <div
           id="drum-display"
           tabIndex={-1}
