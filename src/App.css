@@ -1,9 +1,10 @@
 /* Styling by ID */
 #drum-display {
   display: grid;
-  grid-template-columns: 200px 200px 200px;
-  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
   padding-top: 5%;
+  padding-left: 5%;
   justify-content: center;
 }
 
@@ -31,13 +32,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   background-color: blue;
   color: #ffffff;
   text-align: center;
 }
 
-.social-icon {
+.social {
   margin-top: 1%;
+  margin-bottom: 2%;
+  padding: 2px 2px;
+  filter: drop-shadow(2px 1px 1px #fff);
 }
 
 .top-banners {
@@ -49,8 +54,7 @@
 }
 
 .drum-pad {
-  /* height: 100px;
-    width: 100px; */
+  width: 80%;
   background: #cc95c0; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -75,4 +79,13 @@
 
 }
 
+/* Media Queries!!! 
+* You know you :heart: them
+*/
 
+@media (max-width: 376px) {
+  .social {
+    margin-bottom: 25px;
+    filter: drop-shadow(2px 1px 1px #fff);
+  }
+} 
