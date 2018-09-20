@@ -154,12 +154,19 @@ class App extends Component {
         <header className="App-header">
           <h1 id="name">Drum Machine Game</h1>
           <SocialIcon
+            className="social"
             url="https://www.github.com/petercr/react-drum-machine/"
             color="#333333"
           />
           <SocialIcon
+            className="social"
             url="https://www.twitter.com/PeteCapeCod"
             color="#ffffff"
+          />
+          <SocialIcon
+            className="social"
+            url="https://www.linkedin.com/in/peter-cruckshank-25022a141/"
+            color="#07cef1"
           />
         </header>
         <div id="playing" className="top-banners">
