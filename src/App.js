@@ -186,50 +186,67 @@ class App extends Component {
           */}
           <div className="drum-pad" id="Q" onClick={e => this.handleClick(e)}>
             <p>Q</p>
-            <audio className=".clip">
-              <source src={Kick_thump} type="audio/mp3" />
-            </audio>
+              <audio className="clip" src={Kick_thump} type="audio/mp3" />
+            <div className="drum-names">
             <p>Bass Drum</p>
+            </div>
           </div>
           <div className="drum-pad" id="W" onClick={e => this.handleClick(e)}>
             <p>W</p>
-            <audio className=".clip" src={Kick_zapper} type="audio/mp3" />
+            <audio className="clip" src={Kick_zapper} type="audio/mp3" />
+            <div className="drum-names">
             <p>Kick Drum</p>
+            </div>
+    
           </div>
           <div className="drum-pad" id="E" onClick={e => this.handleClick(e)}>
             <p>E</p>
             <audio className=".clip" src={Tom_tom} type="audio/mp3" />
+            <div className="drum-names">
             <p>Tom Tom</p>
+            </div>
           </div>
           <div className="drum-pad" id="A" onClick={e => this.handleClick(e)}>
             <p>A</p>
-            <audio className=".clip" src={Snare_block} type="audio/mp3" />
+            <audio className="clip" src={Snare_block} type="audio/mp3" />
+            <div className="drum-names">
             <p>Snare Drum</p>
+            </div>
           </div>
           <div className="drum-pad" id="S" onClick={e => this.handleClick(e)}>
             <p>S</p>
-            <audio className=".clip" src={HiHat} type="audio/mp3" />
+            <audio className="clip" src={HiHat} type="audio/mp3" />
+            <div className="drum-names">
             <p>Hi Hat</p>
+            </div>
           </div>
           <div className="drum-pad" id="D" onClick={e => this.handleClick(e)}>
             <p>D</p>
-            <audio className=".clip" src={Ride_cymbal} type="audio/mp3" />
+            <audio className="clip" src={Ride_cymbal} type="audio/mp3" />
+            <div className="drum-names">
             <p>Ride Cymbal</p>
+            </div>
           </div>
           <div className="drum-pad" id="Z" onClick={e => this.handleClick(e)}>
             <p>Z</p>
-            <audio className=".clip" src={Tribal} type="audio/mp3" />
+            <audio className="clip" src={Tribal} type="audio/mp3" />
+            <div className="drum-names">
             <p>Tribal Drum</p>
+            </div>
           </div>
           <div className="drum-pad" id="X" onClick={e => this.handleClick(e)}>
             <p>X</p>
-            <audio src={Crash_noise} type="audio/mp3" />
+            <audio className="clip" src={Crash_noise} type="audio/mp3" />
+            <div className="drum-names">
             <p>Crash Cymbal</p>
+            </div>
           </div>
           <div className="drum-pad" id="C" onClick={e => this.handleClick(e)}>
             <p>C</p>
-            <audio className=".clip" src={Clap_808} type="audio/mp3" />
+            <audio className="clip" src={Clap_808} type="audio/mp3" />
+            <div className="drum-names">
             <p>Clap</p>
+            </div>
           </div>
         </div>
       </div>
