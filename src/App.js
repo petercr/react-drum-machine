@@ -45,7 +45,9 @@ class App extends Component {
   }
 
   handleClick(event) {
-    switch (event.currentTarget.id) {
+    const log = event;
+    console.log(log);
+    switch (event.currentTarget.id ) {
       case "W":
         this.sounds.kickZapper.currentTime = 0;
         this.setState({ default: this.state.kickZapper });
@@ -184,9 +186,12 @@ class App extends Component {
           {/* Drum sounds from http://99sounds.org/drum-samples/ 
           * Please see site for license info
           */}
-          <div className="drum-pad" id="Q" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" onClick={e => this.handleClick(e)}>
             <p>Q</p>
-              <audio className="clip" src={Kick_thump} type="audio/mp3" />
+              <audio className="clip" 
+              src={Kick_thump} 
+              type="audio/mp3"
+              id="Q"  />
             <div className="drum-names">
             <p>Bass Drum</p>
             </div>
