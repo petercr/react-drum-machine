@@ -47,7 +47,7 @@ class App extends Component {
   handleClick(event) {
     const log = event;
     console.log(log);
-    switch (event.currentTarget.id ) {
+    switch (event.currentTarget.id || event.currentTarget.childNodes[1].id) {
       case "W":
         this.sounds.kickZapper.currentTime = 0;
         this.setState({ default: this.state.kickZapper });
@@ -95,7 +95,7 @@ class App extends Component {
         this.sounds.clap808.play();
     }
 
-    console.log(event.currentTarget);
+    console.dir(event.currentTarget);
   }
 
   handleKeys(key) {
