@@ -47,7 +47,7 @@ class App extends Component {
   handleClick(event) {
     const log = event;
     console.log(log);
-    switch (event.currentTarget.id || event.currentTarget.childNodes[1].id) {
+    switch (event.currentTarget.childNodes[1].id) {
       case "W":
         this.sounds.kickZapper.currentTime = 0;
         this.setState({ default: this.state.kickZapper });
@@ -186,63 +186,63 @@ class App extends Component {
           {/* Drum sounds from http://99sounds.org/drum-samples/ 
           * Please see site for license info
           */}
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="bass-drum" onClick={e => this.handleClick(e)}>
             <p>Q</p>
             <audio className="clip" id="Q" src={Kick_thump} type="audio/mp3" />
             <div className="drum-names">
               <p>Bass Drum</p>
             </div>
           </div>
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="kick-drum" onClick={e => this.handleClick(e)}>
             <p>W</p>
             <audio className="clip" id="W" src={Kick_zapper} type="audio/mp3" />
             <div className="drum-names">
               <p>Kick Drum</p>
             </div>
           </div>
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="tom-tom" onClick={e => this.handleClick(e)}>
             <p>E</p>
             <audio className="clip" id="E" src={Tom_tom} type="audio/mp3" />
             <div className="drum-names">
               <p>Tom Tom</p>
             </div>
           </div>
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="snare-drum" onClick={e => this.handleClick(e)}>
             <p>A</p>
             <audio className="clip" id="A" src={Snare_block} type="audio/mp3" />
             <div className="drum-names">
               <p>Snare Drum</p>
             </div>
           </div>
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="hi-hat" onClick={e => this.handleClick(e)}>
             <p>S</p>
             <audio className="clip" id="S" src={HiHat} type="audio/mp3" />
             <div className="drum-names">
               <p>Hi Hat</p>
             </div>
           </div>
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="ride-cymbal" onClick={e => this.handleClick(e)}>
             <p>D</p>
             <audio className="clip" id="D" src={Ride_cymbal} type="audio/mp3" />
             <div className="drum-names">
               <p>Ride Cymbal</p>
             </div>
           </div>
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="tribal-drum" onClick={e => this.handleClick(e)}>
             <p>Z</p>
             <audio className="clip" id="Z" src={Tribal} type="audio/mp3" />
             <div className="drum-names">
               <p>Tribal Drum</p>
             </div>
           </div>
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="crash-cymbal" onClick={e => this.handleClick(e)}>
             <p>X</p>
             <audio className="clip" id="X" src={Crash_noise} type="audio/mp3" />
             <div className="drum-names">
               <p>Crash Cymbal</p>
             </div>
           </div>
-          <div className="drum-pad" onClick={e => this.handleClick(e)}>
+          <div className="drum-pad" id="clap" onClick={e => this.handleClick(e)}>
             <p>C</p>
             <audio className="clip" id="C" src={Clap_808} type="audio/mp3" />
             <div className="drum-names">
