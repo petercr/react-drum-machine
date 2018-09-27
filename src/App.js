@@ -98,55 +98,57 @@ class App extends Component {
     console.dir(event.currentTarget);
   }
 
-  handleKeys(key) {
-    const upperCase = key.toUpperCase();
+  handleKeys(keyCode) {
+    // const upperCase = key.toUpperCase();
 
-    switch (upperCase) {
-      case "W":
+    switch (keyCode) {
+      case 87:
         this.sounds.kickZapper.currentTime = 0;
         this.setState({ default: this.state.kickZapper });
         this.sounds.kickZapper.play();
         break;
-      case "Q":
+      case 81:
         this.sounds.kickThump.currentTime = 0;
         this.setState({ default: this.state.kickThump });
         this.sounds.kickThump.play();
         break;
-      case "E":
+      case 69:
         this.sounds.tomTom.currentTime = 0;
         this.setState({ default: this.state.tomTom });
         this.sounds.tomTom.play();
         break;
-      case "A":
+      case 65:
         this.sounds.snareBlock.currentTime = 0;
         this.setState({ default: this.state.snareBlock });
         this.sounds.snareBlock.play();
         break;
-      case "S":
+      case 83:
         this.sounds.hiHat.currentTime = 0;
         this.setState({ default: this.state.hiHat });
         this.sounds.hiHat.play();
         break;
-      case "D":
+      case 68:
         this.sounds.rideCymbal.currentTime = 0;
         this.setState({ default: this.state.rideCymbal });
         this.sounds.rideCymbal.play();
         break;
-      case "Z":
+      case 90:
         this.sounds.tribalDrum.currentTime = 0;
         this.setState({ default: this.state.tribalDrum });
         this.sounds.tribalDrum.play();
         break;
-      case "X":
+      case 88:
         this.sounds.crashNoise.currentTime = 0;
         this.setState({ default: this.state.crashNoise });
         this.sounds.crashNoise.play();
         break;
-
-      default:
+      case 67:
         this.sounds.clap808.currentTime = 0;
         this.setState({ default: this.state.clap808 });
         this.sounds.clap808.play();
+        break;
+      default:
+      console.log("Something went wrong");
     }
   }
 
@@ -180,7 +182,7 @@ class App extends Component {
         <div
           id="drum-display"
           tabIndex={-1}
-          onKeyDown={event => this.handleKeys(event.key)}
+          onKeyDown={event => this.handleKeys(event.keyCode)}
         >
           {/* the area with the 9 .drum-pads each with <audio> elms */}
           {/* Drum sounds from http://99sounds.org/drum-samples/ 
