@@ -79,8 +79,11 @@
 
 }
 
+/* Disable extra UX Lettering 
+* for test # 3
+*/
 .drum-names {
-  /* display: none; */
+  display: none;
 }
 
 /* Media Queries!!! 
