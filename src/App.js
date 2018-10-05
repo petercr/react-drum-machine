@@ -89,10 +89,14 @@ class App extends Component {
         this.sounds.crashNoise.play();
         break;
 
-      default:
+      case "C":
         this.sounds.clap808.currentTime = 0;
         this.setState({ default: this.state.clap808 });
         this.sounds.clap808.play();
+        break;
+      default:
+        console.log("Something went wrong");
+        break;
     }
 
     console.dir(event.currentTarget);
