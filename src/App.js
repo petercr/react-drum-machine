@@ -18,15 +18,15 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.sounds = {
-      clap808: new Audio(Clap_808),
-      crashNoise: new Audio(Crash_noise),
-      hiHat: new Audio(HiHat),
-      kickThump: new Audio(Kick_thump),
-      kickZapper: new Audio(Kick_zapper),
-      tribalDrum: new Audio(Tribal),
-      rideCymbal: new Audio(Ride_cymbal),
-      snareBlock: new Audio(Snare_block),
-      tomTom: new Audio(Tom_tom)
+      clap808: document.getElementById('C'),
+      crashNoise: document.getElementById('X'),
+      hiHat: document.getElementById('S'),
+      kickThump: document.getElementById('Q'),
+      kickZapper: document.getElementById('W'),
+      tribalDrum: document.getElementById('Z'),
+      rideCymbal: document.getElementById('D'),
+      snareBlock: document.getElementById('A'),
+      tomTom: document.getElementById('E'),
     };
     this.state = {
       clap808: "Clap Noise",
