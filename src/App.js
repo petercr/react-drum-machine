@@ -46,10 +46,16 @@ class App extends Component {
 
   handleClick(event) {
     const log = event;
-    console.log(log);
+    console.log(log, event.currentTarget.childNodes[1].id);
     switch (event.currentTarget.childNodes[1].id) {
       case "W":
-        this.sounds.kickZapper.currentTime = 0;
+
+        if (this.sounds.kickZapper.currentTime !== null) {
+          this.sounds.kickZapper.play();
+        }
+        else {
+          this.sounds.kickZapper.currentTime = 0;
+        }
         this.setState({ default: this.state.kickZapper });
         this.sounds.kickZapper.play();
         break;
