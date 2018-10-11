@@ -1,7 +1,7 @@
 {
   "name": "react-drum-machine",
   "version": "0.1.0",
-  "homepage": "https://petercr.github.io/react-drum-machine/",
+  "homepage": "https://elastic-franklin-f434fd.netlify.com",
   "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
