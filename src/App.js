@@ -49,56 +49,58 @@ class App extends Component {
     console.log(log, event.currentTarget.childNodes[1]);
     switch (event.currentTarget.childNodes[1].id) {
       case "W":
-
-        if (this.sounds.kickZapper.currentTime !== null) {
-          this.sounds.kickZapper.play();
-        }
-        else {
-          this.sounds.kickZapper.currentTime = 0;
-        }
+        const kickZapper = document.getElementById('W');
+        kickZapper.currentTime = 0;
         this.setState({ default: this.state.kickZapper });
-        this.sounds.kickZapper.play();
+        kickZapper.play();
         break;
       case "Q":
-        this.sounds.kickThump.currentTime = 0;
+        const kickThump = document.getElementById('Q');
+        kickThump.currentTime = 0;
         this.setState({ default: this.state.kickThump });
-        this.sounds.kickThump.play();
+        kickThump.play();
         break;
       case "E":
-        this.sounds.tomTom.currentTime = 0;
+        const tomTom = document.getElementById('E');
+        tomTom.currentTime = 0;
         this.setState({ default: this.state.tomTom });
-        this.sounds.tomTom.play();
+        tomTom.play();
         break;
       case "A":
-        this.sounds.snareBlock.currentTime = 0;
+        const snareBlock = document.getElementById('A');
+        snareBlock.currentTime = 0;
         this.setState({ default: this.state.snareBlock });
-        this.sounds.snareBlock.play();
+        snareBlock.play();
         break;
       case "S":
-        this.sounds.hiHat.currentTime = 0;
+      const hiHat = document.getElementById('S');
+        hiHat.currentTime = 0;
         this.setState({ default: this.state.hiHat });
-        this.sounds.hiHat.play();
+        hiHat.play();
         break;
       case "D":
-        this.sounds.rideCymbal.currentTime = 0;
+      const rideCymbal = document.getElementById('D');
+        rideCymbal.currentTime = 0;
         this.setState({ default: this.state.rideCymbal });
-        this.sounds.rideCymbal.play();
+        rideCymbal.play();
         break;
       case "Z":
-        this.sounds.tribalDrum.currentTime = 0;
+      const tribalDrum = document.getElementById('Z');
+        tribalDrum.currentTime = 0;
         this.setState({ default: this.state.tribalDrum });
-        this.sounds.tribalDrum.play();
+        tribalDrum.play();
         break;
       case "X":
-        this.sounds.crashNoise.currentTime = 0;
+      const crashNoise = document.getElementById('X');
+        crashNoise.currentTime = 0;
         this.setState({ default: this.state.crashNoise });
-        this.sounds.crashNoise.play();
+        crashNoise.play();
         break;
-
       case "C":
-        this.sounds.clap808.currentTime = 0;
+      const clap808 = document.getElementById('C');
+        clap808.currentTime = 0;
         this.setState({ default: this.state.clap808 });
-        this.sounds.clap808.play();
+        clap808.play();
         break;
       default:
         console.log("Something went wrong");
@@ -113,53 +115,64 @@ class App extends Component {
 
     switch (keyCode) {
       case 87:
-        this.sounds.kickZapper.currentTime = 0;
+        const kickZapper = document.getElementById('W');
+        kickZapper.currentTime = 0;
         this.setState({ default: this.state.kickZapper });
-        this.sounds.kickZapper.play();
+        kickZapper.play();
         break;
       case 81:
-        this.sounds.kickThump.currentTime = 0;
+        const kickThump = document.getElementById('Q');
+        kickThump.currentTime = 0;
         this.setState({ default: this.state.kickThump });
-        this.sounds.kickThump.play();
+        kickThump.play();
         break;
       case 69:
-        this.sounds.tomTom.currentTime = 0;
+        const tomTom = document.getElementById('E');
+        tomTom.currentTime = 0;
         this.setState({ default: this.state.tomTom });
-        this.sounds.tomTom.play();
+        tomTom.play();
         break;
       case 65:
-        this.sounds.snareBlock.currentTime = 0;
+        const snareBlock = document.getElementById('A');
+        snareBlock.currentTime = 0;
         this.setState({ default: this.state.snareBlock });
-        this.sounds.snareBlock.play();
+        snareBlock.play();
         break;
       case 83:
-        this.sounds.hiHat.currentTime = 0;
+      const hiHat = document.getElementById('S');
+        hiHat.currentTime = 0;
         this.setState({ default: this.state.hiHat });
-        this.sounds.hiHat.play();
+        hiHat.play();
         break;
       case 68:
-        this.sounds.rideCymbal.currentTime = 0;
+      const rideCymbal = document.getElementById('D');
+        rideCymbal.currentTime = 0;
         this.setState({ default: this.state.rideCymbal });
-        this.sounds.rideCymbal.play();
+        rideCymbal.play();
         break;
       case 90:
-        this.sounds.tribalDrum.currentTime = 0;
+      const tribalDrum = document.getElementById('Z');
+        tribalDrum.currentTime = 0;
         this.setState({ default: this.state.tribalDrum });
-        this.sounds.tribalDrum.play();
+        tribalDrum.play();
         break;
       case 88:
-        this.sounds.crashNoise.currentTime = 0;
+      const crashNoise = document.getElementById('X');
+        crashNoise.currentTime = 0;
         this.setState({ default: this.state.crashNoise });
-        this.sounds.crashNoise.play();
+        crashNoise.play();
         break;
       case 67:
-        this.sounds.clap808.currentTime = 0;
+      const clap808 = document.getElementById('C');
+        clap808.currentTime = 0;
         this.setState({ default: this.state.clap808 });
-        this.sounds.clap808.play();
+        clap808.play();
         break;
       default:
-      console.log("Something went wrong");
+        console.log("Something went wrong");
+        break;
     }
+
   }
 
   render() {
@@ -184,7 +197,7 @@ class App extends Component {
           />
         </header>
         <div id="playing" className="top-banners">
-          What's Playing:
+          What&apos;s Playing:
         </div>
         <div id="display" className="top-banners">
           {this.state.default}
